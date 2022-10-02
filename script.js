@@ -13,8 +13,8 @@ const computerChoice = function getCPUchoice() {
 
 function round(computer, player) {
 
-    
-    //tie
+
+    ///tie
     if (computer== player) {
         console.log("ITS A TIE!!")
     
