@@ -17,7 +17,7 @@ let round = (computer, player) => {
 
     ///tie
 
-    
+
     if (computer == player) {
         console.log("ITS A TIE!!")
 
@@ -63,15 +63,15 @@ const game = () => {
         round(computerChoice(), 'scissors')
     }
 
-    if (cpuCount > playerCount){
+    if (cpuCount > playerCount) {
         console.log(result + "The cpu wins")
     }
 
-    else if(playerCount>cpuCount){
+    else if (playerCount > cpuCount) {
         console.log(result + "The player wins")
     }
 
-    else{
+    else {
         console.log(result + "Its a tie")
     }
 }
