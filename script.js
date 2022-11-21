@@ -6,7 +6,6 @@ const computerChoice = () => {
 
     const ranNo = Math.random() * 3
     const ranChoice = Math.floor(ranNo);
-    console.log(choices[ranChoice]);
     return choices[ranChoice];
 
 }
@@ -57,9 +56,11 @@ let round = (computer, player) => {
 
 }
 
-const game = () => {
+const game = (rounds) => {
     let result = "RESULT: "
-    for (let count = 0; count <= 5; count++) {
+    let count = 0;
+    while (count < rounds){
+        count++;
         round(computerChoice(), 'scissors')
     }
 
@@ -76,7 +77,7 @@ const game = () => {
     }
 }
 
-console.log(game(5))
+game(10);
 
 
 
