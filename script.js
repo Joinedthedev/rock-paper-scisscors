@@ -82,9 +82,38 @@ const game = (rounds) => {
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
-const results = document.querySelector('result');
+const scores = document.querySelector('.scoreboard');
+
+let playerScore = document.createElement('h4')
+let computerScore = document.createElement('h4')
+
+playerScore.textContent = 'Player: ' + playerCount
+computerScore.textContent = 'Computer: ' + cpuCount
+
+let pScore = () => playerScore.textContent = 'Player: ' + playerCount;
+let cScore = () => computerScore.textContent = 'Computer: ' + cpuCount;
 
 
-rock.addEventListener('click', () => round(computerChoice(), 'rock'))
-paper.addEventListener('click', () => round(computerChoice(), 'paper'))
-scissors.addEventListener('click', () => round(computerChoice(), 'scissors'))
+scores.appendChild(playerScore);
+scores.appendChild(computerScore)
+
+
+rock.addEventListener('click', () => {
+    round(computerChoice(), 'rock')
+    pScore();
+    cScore();
+
+});
+
+paper.addEventListener('click', () => {
+    round(computerChoice(), 'paper')
+    pScore();
+    cScore();
+
+});
+
+scissors.addEventListener('click', () => {
+    round(computerChoice(), 'scissors')
+    pScore();
+    cScore();
+});
