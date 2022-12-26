@@ -1,0 +1,57 @@
+*{
+    font-family: Barlow Condensed;
+}
+html{
+    color: white;
+    background-color: rgb(17, 17, 17);
+    width: 100vw;
+}
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 5px;
+    height: 80px;
+    width: 100%;
+}
+
+.wrap{
+    width: 100%;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
+
+
+.results {
+    margin: 10px;
+    display: flex;
+    align-self: flex-end;
+    
+}
+
+.choice-container {
+    display: flex;
+    gap: 52px;
+    align-self: center;
+   
+}

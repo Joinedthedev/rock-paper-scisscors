@@ -82,6 +82,8 @@ const game = (rounds) => {
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
+const results = document.querySelector('result');
+
 
 rock.addEventListener('click', () => round(computerChoice(), 'rock'))
 paper.addEventListener('click', () => round(computerChoice(), 'paper'))
