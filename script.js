@@ -59,7 +59,7 @@ let round = (computer, player) => {
 const game = (rounds) => {
     let result = "RESULT: "
     let count = 0;
-    while (count < rounds){
+    while (count < rounds) {
         count++;
         round(computerChoice(), 'scissors')
     }
@@ -79,5 +79,10 @@ const game = (rounds) => {
 
 game(10);
 
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
 
-
+rock.addEventListener('click', () => round(computerChoice(), 'rock'))
+paper.addEventListener('click', () => round(computerChoice(), 'paper'))
+scissors.addEventListener('click', () => round(computerChoice(), 'scissors'))
