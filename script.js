@@ -102,13 +102,14 @@ rock.addEventListener('click', () => {
     round(computerChoice(), 'rock')
     pScore();
     cScore();
-
+    getWinner();
 });
 
 paper.addEventListener('click', () => {
     round(computerChoice(), 'paper')
     pScore();
     cScore();
+    getWinner();
 
 });
 
@@ -116,4 +117,23 @@ scissors.addEventListener('click', () => {
     round(computerChoice(), 'scissors')
     pScore();
     cScore();
+    getWinner();
 });
+
+const getWinner = () => {
+    if (playerCount ==5) {
+
+        alert("Player wins");
+        playerCount = 0;
+        cpuCount = 0;
+    }
+
+    else if (cpuCount ==5) {
+        alert("Cpu wins");
+        playerCount = 0;
+        cpuCount = 0;
+
+    }
+}
+
+
