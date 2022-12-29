@@ -1,5 +1,7 @@
 
 
+alert("Directions: Press any of the options and the computer" +
+ " will throw a random response either rock, paper, or scissors. First to five wins! Good luck!")
 
 const computerChoice = () => {
     const choices = ["rock", "paper", "scissors"];
@@ -99,36 +101,37 @@ scores.appendChild(computerScore)
 
 
 rock.addEventListener('click', () => {
+    getWinner();
     round(computerChoice(), 'rock')
     pScore();
     cScore();
-    getWinner();
+
 });
 
 paper.addEventListener('click', () => {
+    getWinner();
     round(computerChoice(), 'paper')
     pScore();
     cScore();
-    getWinner();
 
 });
 
 scissors.addEventListener('click', () => {
+    getWinner();
     round(computerChoice(), 'scissors')
     pScore();
     cScore();
-    getWinner();
 });
 
 const getWinner = () => {
-    if (playerCount ==5) {
+    if (playerCount == 5) {
 
         alert("Player wins");
         playerCount = 0;
         cpuCount = 0;
     }
 
-    else if (cpuCount ==5) {
+    else if (cpuCount == 5) {
         alert("Cpu wins");
         playerCount = 0;
         cpuCount = 0;

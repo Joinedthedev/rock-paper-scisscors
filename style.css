@@ -81,3 +81,7 @@ img{
     width: 50px;
     height: 50px;
 }
+
+sIMG{
+    transform: rotate(90deg);
+}
