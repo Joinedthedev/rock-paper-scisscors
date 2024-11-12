@@ -13,6 +13,7 @@ const computerChoice = () => {
 }
 var cpuCount = 0, playerCount = 0;
 
+// computer and player represent the values of the choices made by each respectively.
 let round = (computer, player) => {
 
 
